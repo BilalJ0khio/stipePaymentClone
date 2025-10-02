@@ -1,0 +1,123 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stripe Landing - Clone</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site">
+    <header>
+      <div class="brand">
+        <div class="logo">S</div>
+        <div>
+          <div style="font-weight:800">Stripe Clone</div>
+          <div style="font-size:12px;color:var(--muted)">Payment UI — CSS clone</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#">Products</a>
+        <a href="#">Pricing</a>
+        <a href="#">Docs</a>
+        <a class="cta" href="#">Get started</a>
+      </nav>
+      <div class="hamburger" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="mobile-menu">
+        <a href="#">Products</a>
+        <a href="#">Pricing</a>
+        <a href="#">Docs</a>
+        <a class="cta" href="#">Get started</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="eyebrow">Payments • Billing • Connect</div>
+          <h1>Payments infrastructure for the internet</h1>
+          <p class="lead">Accept payments, send payouts, and manage your business online with a single platform. Designed for developers and trusted by millions of companies.</p>
+          <div class="actions">
+            <a class="btn primary" href="#">Get started</a>
+            <a class="btn" href="#">Watch demo</a>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card shadow">
+            <h3>Start accepting payments</h3>
+            <div class="muted">Enter details to simulate checkout</div>
+
+            <div class="checkout-box">
+              <input type="text" placeholder="Card number" class="input" />
+              <div style="display:flex;gap:10px;flex-wrap:wrap">
+                <input type="text" placeholder="MM/YY" class="input" style="flex:1" />
+                <input type="text" placeholder="CVC" class="input" style="flex:1" />
+              </div>
+              <input type="text" placeholder="Name on card" class="input" />
+              <input type="text" placeholder="Country" class="input" />
+              <a class="btn primary" style="width:100%;margin-top:10px;display:inline-block;text-align:center" href="#">Pay $29</a>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section>
+        <div class="pricing">
+          <div class="plan">
+            <div class="tag">Starter</div>
+            <h4>Beginner</h4>
+            <p class="muted">All basics to accept payments</p>
+            <div class="price">Free</div>
+          </div>
+          <div class="plan">
+            <div class="tag">Popular</div>
+            <h4>Scale</h4>
+            <p class="muted">Advanced features for growing teams</p>
+            <div class="price">$29 / mo</div>
+          </div>
+          <div class="plan">
+            <div class="tag">Enterprise</div>
+            <h4>Custom</h4>
+            <p class="muted">Tailored solutions & SLAs</p>
+            <div class="price">Contact us</div>
+          </div>
+        </div>
+
+        <div class="features-grid">
+          <div class="fcard">
+            <h5>Developer friendly</h5>
+            <p>Clear APIs, great docs, and SDKs for multiple languages.</p>
+          </div>
+          <div class="fcard">
+            <h5>Global reach</h5>
+            <p>Support for cards, wallets, and local payment methods.</p>
+          </div>
+          <div class="fcard">
+            <h5>Security</h5>
+            <p>Built-in fraud protection and data controls for compliance.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>© 2025 Stripe Clone — Bilal</div>
+      <div>Made with ❤️ — clone practice</div>
+    </footer>
+  </div>
+
+  <script>
+    // Toggle animation for mobile menu
+    const menu = document.querySelector('.mobile-menu');
+    menu.classList.remove('open');
+    document.querySelector('.hamburger').addEventListener('click', ()=>{
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+</body>
+</html>
