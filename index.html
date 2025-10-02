@@ -1,78 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>stripe</title>
-</head>
-<body>
+  </head>
+  <body>
     <article class="main-container">
-        <header class="header">
-            <nav class="primary-navigation">
-                <section class="main-nav">
-                    <div class="logo-container">
-                        <div class=" logo"><span>S</span></div>
-                        <div class="logo-child2">
-                            <span>stripe Clone</span>
-                            <span class="small">Payment UI — CSS clone</span>
-                        </div>
-                    </div>
-                    <ul  class="navigation-container">
-                        <li class=""><a href="#">Products</a></li>
-                        <li class=""><a href="#">Pricing</a></li>
-                        <li class=""><a href="#">Docs</a></li>
-                        <li class="">
-                            <a href="#">
-                                <button class="btn">Get started</button>
-                            </a>
-                        </li>
-                        <li class="hamberg"></li>
-                    </ul>
-                </section>
-            </nav>
-        </header>
-        <main>             
-            <section class="hero-section">
-                <div class="hero-child-1">
-                    <div class="eyebrow">Payments • Billing • Connect</div>
-                    <h1 class="primary-heading">Payments infrastructure for the internet</h1>
-                    <p class="text">Accept payments, send payouts, and manage your business online with a single platform. Designed for developers and trusted by millions of companies.</p>
-                    <div class="actions">
-                        <a href="#"><button class="btn action-btns">Get started</button></a>
-                        <a href="#"><button class="btn action-btns action-btn-dark">Watch demo</button></a>
-                    </div>
-                </div>
-                <div class="hero-child-2">
-                    <h2 class="secondary-heading">Start accepting payments</h2>
-                    <p class="payment-text text">Enter details to simulate checkout</p>
-                    <form class="form" action="#">
-                       <div>
-                         <input  class="input" type="number" name="cardNumber" placeholder="Card number" required >
-                    </div>
-                    <div class="input-container">
-                        <input class="input" type="text" name="cardExpiry" placeholder="MM/YY">
-                        <input  class="input" type="text" 
-                                id="cvc" 
-                                name="cvc" 
-                                placeholder="CVC" 
-                                required 
-                                pattern="\d{3,4}" 
-                                maxlength="4" 
-                                inputmode="numeric">
-                    </div>
-                    <div><input class="input" type="text" name="Name" autocomplete="cc-name" placeholder="Name on card"></div>
-                    <div>
-                        <input  class="input" type="country" name="Country" placeholder="Country">
-                    </div>
-                    <a  class="checkout-btn" href=""><button class=" btn btn1">Pay $29</button></a>
-
-                    </form>
-                </div>
-            </section>
-            
-        </main>
+      <header class="header">
+        <nav class="primary-navigation">
+          <section class="main-nav">
+            <div class="logo-container">
+              <div class="logo"><span>S</span></div>
+              <div class="logo-child2">
+                <span>stripe Clone</span>
+                <span class="small">Payment UI — CSS clone</span>
+              </div>
+            </div>
+            <ul class="navigation-container">
+              <li class=""><a href="#">Products</a></li>
+              <li class=""><a href="#">Pricing</a></li>
+              <li class=""><a href="#">Docs</a></li>
+              <li class="">
+                <a href="#">
+                  <button class="btn">Get started</button>
+                </a>
+              </li>
+              <li class="hamberg"></li>
+            </ul>
+          </section>
+        </nav>
+      </header>
+      <main>
+        <section class="hero-section">
+          <div class="hero-child-1">
+            <div class="eyebrow">Payments • Billing • Connect</div>
+            <h1 class="primary-heading">
+              Payments infrastructure for the internet
+            </h1>
+            <p class="text">
+              Accept payments, send payouts, and manage your business online
+              with a single platform. Designed for developers and trusted by
+              millions of companies.
+            </p>
+            <div class="actions">
+              <a href="#"
+                ><button class="btn action-btns">Get started</button></a
+              >
+              <a href="#"
+                ><button class="btn action-btns action-btn-dark">
+                  Watch demo
+                </button></a
+              >
+            </div>
+          </div>
+          <div class="hero-child-2">
+            <h2 class="secondary-heading">Start accepting payments</h2>
+            <p class="payment-text text">Enter details to simulate checkout</p>
+            <form class="form" action="#">
+              <div>
+                <input
+                  class="input"
+                  type="number"
+                  name="cardNumber"
+                  placeholder="Card number"
+                  required
+                />
+              </div>
+              <div class="input-container">
+                <input
+                  class="input"
+                  type="text"
+                  name="cardExpiry"
+                  placeholder="MM/YY"
+                />
+                <input
+                  class="input"
+                  type="text"
+                  id="cvc"
+                  name="cvc"
+                  placeholder="CVC"
+                  required
+                  pattern="\d{3,4}"
+                  maxlength="4"
+                  inputmode="numeric"
+                />
+              </div>
+              <div>
+                <input
+                  class="input"
+                  type="text"
+                  name="Name"
+                  autocomplete="cc-name"
+                  placeholder="Name on card"
+                />
+              </div>
+              <div>
+                <input
+                  class="input"
+                  type="country"
+                  name="Country"
+                  placeholder="Country"
+                />
+              </div>
+              <a class="checkout-btn" href=""
+                ><button class="btn btn1">Pay $29</button></a
+              >
+            </form>
+          </div>
+        </section>
+        <!-- card section -->
+        <section class="card-section">
+          <div class="price-section grid">
+            <div class="card price-card card1">
+              <h3 class="tertiary-heading">Beginner</h3>
+              <p class="text">All basics to accept payments</p>
+              <p>Free</p>
+            </div>
+            <!-- 2  -->
+            <div class="card price-card card2">
+              <h3 class="tertiary-heading">Scale</h3>
+              <p class="text">Advanced features for growing teams</p>
+              <p>$29 / mo</p>
+            </div>
+            <!-- 3  -->
+            <div class="card price-card card3">
+              <h3 class="tertiary-heading">Custom</h3>
+              <p class="text">Tailored solutions & SLAs</p>
+              <p>Contact us</p>
+            </div>
+          </div>
+          <div class="grid card-two">
+            <div class="card card2">
+              <h4 class="quad-heading">Developer friendly</h4>
+              <p class="small-text">
+                Clear APIs, great docs, and SDKs for multiple languages.
+              </p>
+            </div>
+            <!--  -->
+            <div class="card card2">
+              <h4 class="quad-heading">Global reach</h4>
+              <p class="small-text">
+                Support for cards, wallets, and local payment methods.
+              </p>
+            </div>
+            <!--  -->
+            <div class="card card2">
+              <h4 class="quad-heading">Security</h4>
+              <p class="small-text">
+                Built-in fraud protection and data controls for compliance.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div>© 2025 Stripe Clone — Bilal</div>
+        <div>Made with ❤️ — clone practice</div>
+      </footer>
     </article>
-</body>
+  </body>
 </html>
