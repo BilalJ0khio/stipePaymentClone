@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>stripe</title>
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <article class="main-container">
@@ -19,17 +23,19 @@
                 <span class="small">Payment UI — CSS clone</span>
               </div>
             </div>
-            <ul class="navigation-container">
-              <li class=""><a href="#">Products</a></li>
-              <li class=""><a href="#">Pricing</a></li>
-              <li class=""><a href="#">Docs</a></li>
-              <li class="">
-                <a href="#">
-                  <button class="btn">Get started</button>
-                </a>
-              </li>
-              <li class="hamberg"></li>
-            </ul>
+            <div class="divider">
+              <ul class="navigation-container">
+                <li class=""><a href="#">Products</a></li>
+                <li class=""><a href="#">Pricing</a></li>
+                <li class=""><a href="#">Docs</a></li>
+                <li class="">
+                  <a href="#">
+                    <button class="btn">Get started</button>
+                  </a>
+                </li>
+              </ul>
+              <div class="hamburger"><i class="icon ion-md-menu"></i></div>
+            </div>
           </section>
         </nav>
       </header>
@@ -162,4 +168,5 @@
       </footer>
     </article>
   </body>
+  <script src="app.js"></script>
 </html>
