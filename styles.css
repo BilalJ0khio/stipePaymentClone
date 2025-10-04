@@ -141,7 +141,7 @@ body {
   font-weight: 600;
 }
 .primary-heading {
-  font-size: 3.8rem;
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
   line-height: 1.4;
 }
 .secondary-heading {
@@ -320,6 +320,10 @@ body {
 }
 
 @media (max-width: 600px) {
+  .primary-heading {
+    font-size: clamp(2.4rem, 7vw, 3.2rem);
+  }
+
   .navigation-container {
     position: absolute;
     flex-direction: column;
